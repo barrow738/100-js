@@ -176,8 +176,8 @@ kbd{
     text-decoration: none;
 }
 .days-listing.listing-child svg{
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 }
 .children-listing{
     padding-left: 1rem;
@@ -195,4 +195,8 @@ kbd{
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+  margin-bottom: 0;
+}
+.days-listing h4{
+    margin-bottom: 0;
 }

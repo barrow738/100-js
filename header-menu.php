@@ -1,26 +1,26 @@
 <div class="container-fluid top-menu">
     <div class="container">
         <nav>
-            <a href="" class="logo">1oo-js</a>
+            <a href="http://localhost/100-js/" class="logo">1oo-js</a>
             <div class="menu-div">
                 <ul>
                     <li>
-                        <a href="all">All Days</a>
+                        <a href="http://localhost/100-js/all.php">All Days</a>
                     </li>
                     <li>
-                        <a href="all">Day 1-20</a>
+                        <a href="#">Day 1-20</a>
                     </li>
                     <li>
-                        <a href="all">Day 21-40</a>
+                        <a href="#">Day 21-40</a>
                     </li>
                     <li>
-                        <a href="all">Day 41-60</a>
+                        <a href="#">Day 41-60</a>
                     </li>
                     <li>
-                        <a href="all">Day 61-80</a>
+                        <a href="#">Day 61-80</a>
                     </li>
                     <li>
-                        <a href="all">Day 81-100</a>
+                        <a href="#">Day 81-100</a>
                     </li>
                 </ul>
             </div>
