@@ -1,4 +1,5 @@
 <?php 
+    $page_title = "Summary of all lessons learnt in all 100 days";
     include "header.php";
     include "header-menu.php";
 ?>

@@ -1,4 +1,5 @@
 <?php 
+    $page_title = "Setting up the environment for javascript and the website to record my progress";
     include "../header.php";
     include "../header-menu.php";
 ?>
@@ -8,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>
-                        Day 1 - Setting up the environment for javascript and the website to record my progress ( <span class="date">August 23 <sup>rd</sup>, 2021</span> )
+                        <?php echo $page_title;?> ( <span class="date">August 23 <sup>rd</sup>, 2021</span> )
                     </h1>
                     <p>
                         This day I just set up the environment for JavaScript. 
