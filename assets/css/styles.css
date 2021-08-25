@@ -50,7 +50,8 @@ kbd{
 }
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .row{
     display: flex;
@@ -73,6 +74,9 @@ kbd{
 }
 .col-md-4{
     width: calc(4 / 12 * 100%);
+}
+.text-main{
+    color: var(--btn-color);
 }
 /* Custom css */
 .home-slider{

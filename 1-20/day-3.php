@@ -14,12 +14,13 @@
                     
                     <div class="card main-card text-center">
                         <h2>Want to play game?</h2>
-                        <h3 id="message">Nothing here</h3>
-                        <h4 id="cards">Cards: </h4>
-                        <h4 id="sum">Sum: </h4>
-                        <button onClick="playGame()" class="btn btn-main">
+                        <h3 id="message" class="text-main">Start game</h3>
+                        <h4>Cards: <span id="cards"></span></h4>
+                        <h4>Sum: <span id="sum"></span></h4>
+                        <button onClick="startGame()" class="btn btn-main">
                             Start Game
                         </button>
+                        <button onClick="playGame()" class="btn btn-main"> Play Game </button>
                     </div>
                     
                 </div>
@@ -28,13 +29,33 @@
     </section>
 </main>
 <script>
-    let fCard = 10
-    let sCard = 9
-    let sum = fCard + sCard
-    let message = getElementById("message")
+    let fCard = Math.floor((Math.random() * 10) + 1)
+    let sCard = Math.floor((Math.random() * 10) + 1)
+    let cSum = fCard + sCard
+    message = document.getElementById("message")
+    cards = document.getElementById("cards")
+    sum= document.getElementById("sum")
+
+    function startGame(){
+        cards.innerText = fCard + " + " + sCard
+        sum.innerText = cSum
+    }
 
     function playGame(){
-        .innerText = "Do you want to draw a new card?"
+        let rCard = Math.floor((Math.random() * 10) + 1)
+            cards.innerText += " + " + rCard
+            cSum += rCard
+            sum.innerText = cSum
+        
+        if (cSum < 21){
+            message.innerText = "Do you want to draw a new card?" 
+        }
+        else if (cSum === 21){
+            message.innerText = "You have won the blackjack" 
+        }
+        else{
+            message.innerText = "You have lost" 
+        }
     }
     
 </script>
