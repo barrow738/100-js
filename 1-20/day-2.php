@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>
-                        <?php echo $page_title;?> ( <span class="date">August 24 <sup>rd</sup>, 2021</span> )
+                        <?php echo $page_title;?> ( <span class="date">August 24 <sup>th</sup>, 2021</span> )
                     </h1>
                     <p id="greetings">
 
