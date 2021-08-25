@@ -20,7 +20,7 @@
                         <button onClick="startGame()" class="btn btn-main">
                             Start Game
                         </button>
-                        <button onClick="playGame()" class="btn btn-main"> Play Game </button>
+                        <button onClick="playGame()" class="btn btn-main"> New Card </button>
                     </div>
                     
                 </div>
@@ -29,20 +29,24 @@
     </section>
 </main>
 <script>
-    let fCard = Math.floor((Math.random() * 10) + 1)
-    let sCard = Math.floor((Math.random() * 10) + 1)
+    let fCard = randomNumber()
+    let sCard = randomNumber()
     let cSum = fCard + sCard
-    message = document.getElementById("message")
+    message = document.querySelector("#message")
     cards = document.getElementById("cards")
     sum= document.getElementById("sum")
 
+
+    function randomNumber(){
+        return Math.floor((Math.random() * 10) + 1)
+    }
     function startGame(){
         cards.innerText = fCard + " + " + sCard
         sum.innerText = cSum
     }
 
     function playGame(){
-        let rCard = Math.floor((Math.random() * 10) + 1)
+        let rCard = randomNumber()
             cards.innerText += " + " + rCard
             cSum += rCard
             sum.innerText = cSum
@@ -57,6 +61,54 @@
             message.innerText = "You have lost" 
         }
     }
+
+    let myArray = [
+        "item 1",
+        "item 2",
+        "item 3"
+    ]
+
+    let paul = [
+        "Paul osiemo", 24, true
+    ]
+
+    paul.push("JavaScript")
+    paul.push("JavaScript two")
+
+    paul.pop()
+
+
+
+
+    console.log( paul )
+    console.log( myArray[0] )
+    console.log( myArray.length )
+
+
+    for (let count = 0 ; count < 12; count += 1) {
+        console.log(count)
+    }
+
+
+    messages = [
+        "Message one",
+        "Message two",
+        "Message three",
+        "Message four",
+        "Message five"
+    ]
+
+    for ( let i = 0; i < messages.lenght; i++ ) {
+        console.log(messages[i])
+    }
     
+
+    // if (condition && conditionTwo) {
+    //     statement
+    // }
+
+    // if (condition || conditionTwo) {
+    //     statement
+    // }
 </script>
 <?php include "../footer.php";?>

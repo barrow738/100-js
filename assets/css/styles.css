@@ -87,7 +87,7 @@ kbd{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('https://cdn.pixabay.com/photo/2019/10/03/12/12/javascript-4523100_960_720.jpg');
+    background-image: url('../images/100-js-bg.jpg');
     background-size: cover;
     z-index: 1;
 }
