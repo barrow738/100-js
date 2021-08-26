@@ -39,6 +39,31 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>A simple web plugin</h2>
+
+
+                    <h3>Files needed for a chrome extension </h3>
+                    <ul>
+                        <li>Manifest.json consistiong of
+                            <u>
+                                <li>mafifest_version: 3</li>
+                                <li>version:1.0</li>
+                                <li>Name: simple tracker</li>
+                                <li>
+                                    actions: {
+                                        <ul>
+                                            <li>default_popup: index.html</li>
+                                            <li>default_icon: icon.png</li>
+                                        </ul>
+                                    }
+                                </li>
+                            </u>
+                        </li>
+                        <li>icon.png</li>
+                        <li>index.html</li>
+                        <li>index.css or styles.css</li>
+                        <li>index.js</li>
+                        <li>README.md</li>
+                    </ul>
                     <input type="text" name="" placeholder="Type your text here" id="inputField">
                     <button id="inputBtn" class="btn btn-main">Save Input</button>
                     <ul id="inputList">
