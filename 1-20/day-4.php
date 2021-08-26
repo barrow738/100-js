@@ -60,8 +60,15 @@
         
         for (let i = 0; i < myInputs.length; i++){
             inputList.innerHTML += "<li>" + myInputs[i] + "</li>"
+
+
+            // alternative way of doint it
+            const li = document.createElement("li")
+            li.textContent = myInputs[i]
+            inputList.append(li)
         }
         console.log(myInputs)
+
     }
     
     )
