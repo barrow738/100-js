@@ -48,10 +48,10 @@
 </main>
 <script>
 
-    let inputBtn = document.getElementById("inputBtn")
+    const inputBtn = document.getElementById("inputBtn")
 
     inputBtn.addEventListener("click", function() {
-        alert("Still working")
+        
     }
     
     )
