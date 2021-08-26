@@ -32,6 +32,8 @@
     let fCard = randomNumber()
     let sCard = randomNumber()
     let cSum = fCard + sCard
+    let isAlive = true
+    let hasWon = false
     message = document.querySelector("#message")
     cards = document.getElementById("cards")
     sum= document.getElementById("sum")
@@ -46,20 +48,25 @@
     }
 
     function playGame(){
-        let rCard = randomNumber()
+        if( isAlive && !hasWon){
+            let rCard = randomNumber()
             cards.innerText += " + " + rCard
             cSum += rCard
             sum.innerText = cSum
-        
-        if (cSum < 21){
-            message.innerText = "Do you want to draw a new card?" 
-        }
-        else if (cSum === 21){
-            message.innerText = "You have won the blackjack" 
-        }
-        else{
-            message.innerText = "You have lost" 
-        }
+
+
+            if (cSum < 21){
+                message.innerText = "Do you want to draw a new card?"
+            }
+            else if (cSum === 21){
+                message.innerText = "You have won the blackjack" 
+                hasWon = true
+            }
+            else{
+                message.innerText = "You have lost" 
+                isAlive = false
+            }
+        }    
     }
 
     let myArray = [
