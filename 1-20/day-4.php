@@ -62,7 +62,7 @@
                         <li>index.html</li>
                         <li>index.css or styles.css</li>
                         <li>index.js</li>
-                        <li>README.md</li>
+                        <li>README.md - optional</li>
                     </ul>
                     <input type="text" name="" placeholder="Type your text here" id="inputField">
                     <button id="inputBtn" class="btn btn-main">Save Input</button>
