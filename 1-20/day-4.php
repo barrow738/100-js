@@ -32,9 +32,31 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>A simple web plugin</h2>
+                    <input type="text" name="" id="">
+                    <button id="inputBtn" class="btn btn-main">Save Input</button>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 <script>
+
+    let inputBtn = document.getElementById("inputBtn")
+
+    inputBtn.addEventListener("click", function() {
+        alert("Still working")
+    }
+    
+    )
+
+
     let colorDiv = document.querySelector(".color-div")
 
     function generateColor() {
@@ -79,35 +101,35 @@
 
     console.log(randomNumber())
 
-    // let cYear = document.getElementById("currentYear").textContent
-    // let pAge = document.getElementById("setAge")
-    // let dob = 1996
-    // let getAge = cYear - dob
-    // pAge.textContent = getAge
+    let cYear = document.getElementById("currentYear").textContent
+    let pAge = document.getElementById("setAge")
+    let dob = 1996
+    let getAge = cYear - dob
+    pAge.textContent = getAge
 
-    // let Person = {
-    //     name: "Paul Osiemo Nyabaro",
-    //     dateOfBirth: 1996,
-    //     gender: "male",
-    //     isTall: true,
-    //     hasMoney: false,
-    //     goals: [
-    //         "Be a great dad",
-    //         "Make money",
-    //         "Be a full stack developer",
-    //         "Create my own business",
-    //         "Be successful in life",
-    //         "Live a happy life"
-    //         ],
-    //     calculateAGe: function() {
-    //         let age = cYear - this.dateOfBirth
-    //         console.log("I am " + age + " years old")
-    //     }
-    // }
+    let Person = {
+        name: "Paul Osiemo Nyabaro",
+        dateOfBirth: 1996,
+        gender: "male",
+        isTall: true,
+        hasMoney: false,
+        goals: [
+            "Be a great dad",
+            "Make money",
+            "Be a full stack developer",
+            "Create my own business",
+            "Be successful in life",
+            "Live a happy life"
+            ],
+        calculateAGe: function() {
+            let age = cYear - this.dateOfBirth
+            console.log("I am " + age + " years old")
+        }
+    }
     
-    // console.log(Person.goals)
-    // console.log(Person["goals"])
+    console.log(Person.goals)
+    console.log(Person["goals"])
 
-    // Person.calculateAGe()
+    Person.calculateAGe()
 </script>
 <?php include "../footer.php";?>
