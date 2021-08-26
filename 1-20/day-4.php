@@ -41,7 +41,8 @@
                     <h2>A simple web plugin</h2>
                     <input type="text" name="" placeholder="Type your text here" id="inputField">
                     <button id="inputBtn" class="btn btn-main">Save Input</button>
-                    <p id="inputList" class="d-block"></p>
+                    <ul id="inputList">
+                    </ul>
                 </div>
             </div>
         </div>
@@ -56,7 +57,11 @@
         let inputField = document.getElementById("inputField").value
         console.log(inputField)
         myInputs.push(inputField)
-        inputList.textContent = myInputs
+        
+        for (let i = 0; i < myInputs.length; i++){
+            inputList.innerHTML += "<li>" + myInputs[i] + "</li>"
+        }
+        console.log(myInputs)
     }
     
     )
