@@ -219,3 +219,13 @@ kbd{
 .text-center{
     text-align: center;
 }
+.color-div{
+    display: block;
+    width: 100px;
+    height: 50px;
+    box-shadow: 0 3px 10px #0005;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border:1px solid #fff;
+}

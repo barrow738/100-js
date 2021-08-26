@@ -45,8 +45,17 @@
     function startGame(){
         cards.innerText = fCard + " + " + sCard
         sum.innerText = cSum
+        
+        if (cSum >= 21){
+            resetGame()
+        }
     }
 
+    function resetGame(){
+        cards.innerText = ""
+        cSum = 0
+        sum.innerText = cSum
+    }
     function playGame(){
         if( isAlive && !hasWon){
             let rCard = randomNumber()
