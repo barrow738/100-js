@@ -85,6 +85,9 @@ input{
 .text-main{
     color: var(--btn-color);
 }
+.d-block{
+    display: block;
+}
 /* Custom css */
 .home-slider{
     position: relative;

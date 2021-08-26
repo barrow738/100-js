@@ -39,19 +39,24 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>A simple web plugin</h2>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" placeholder="Type your text here" id="inputField">
                     <button id="inputBtn" class="btn btn-main">Save Input</button>
+                    <p id="inputList" class="d-block"></p>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <script>
-
+    let myInputs = []
+    let inputList = document.getElementById("inputList")
     const inputBtn = document.getElementById("inputBtn")
 
     inputBtn.addEventListener("click", function() {
-        
+        let inputField = document.getElementById("inputField").value
+        console.log(inputField)
+        myInputs.push(inputField)
+        inputList.textContent = myInputs
     }
     
     )
