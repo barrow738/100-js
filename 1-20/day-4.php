@@ -54,14 +54,21 @@
     const inputBtn = document.getElementById("inputBtn")
 
     inputBtn.addEventListener("click", function() {
-        let inputField = document.getElementById("inputField").value
+        let inputField = document.getElementById("inputField")
         console.log(inputField)
-        myInputs.push(inputField)
+        myInputs.push(inputField.value)
+        inputField.value = ""
         
         for (let i = 0; i < myInputs.length; i++){
-            inputList.innerHTML += "<li>" + myInputs[i] + "</li>"
+            inputList.innerHTML += "<li> <a href='https://" + myInputs[i] + "' target='_blank'>" + myInputs[i] + "</a></li>"
 
 
+            // Template string
+            inputList.innerHTML += `
+            <li> 
+                <a href="https://${myInputs[i]}" target="_blank"> ${myInputs[i]}</a>
+            </li>`
+            
             // alternative way of doint it
             const li = document.createElement("li")
             li.textContent = myInputs[i]
