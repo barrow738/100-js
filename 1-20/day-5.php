@@ -22,7 +22,7 @@
 
 
                     <h2>Truthy and false values</h2>
-                    <h4>Falsey values</h4>
+                    <h4>Falsy values</h4>
                     <ul>
                         <li>0</li>
                         <li>false</li>
