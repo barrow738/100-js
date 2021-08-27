@@ -18,6 +18,19 @@
                     <ul id="inputList">
                     </ul>
                     <p id="lsContent"></p>
+
+
+
+                    <h2>Truthy and false values</h2>
+                    <h4>Falsey values</h4>
+                    <ul>
+                        <li>0</li>
+                        <li>false</li>
+                        <li>""</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>NaN</li>
+                    </ul>
                 </div>
             </div>
         </div>
