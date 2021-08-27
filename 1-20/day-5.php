@@ -8,10 +8,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>A simple web plugin</h2>
-
-
-                    <h3>Files needed for a chrome extension </h3>
+                <h1>
+                    <?php echo $page_title;?> ( <span class="date">August 27 <sup>th</sup>, 2021</span> )
+                </h1>
+                
                 
                     <input type="text" name="" placeholder="Type your text here" id="inputField">
                     <button id="inputBtn" class="btn btn-main">Save Input</button>
@@ -31,6 +31,9 @@
                         <li>undefined</li>
                         <li>NaN</li>
                     </ul>
+
+
+                    <h2>Function pass in argument</h2>
                 </div>
             </div>
         </div>
@@ -78,5 +81,12 @@
 
     // Clearing the local storage
     // localStorage.clear()
+
+
+
+    function greetUser(username) {
+        console.log("How are you " + username )
+    }
+    greetUser("Paul Barrow")
 </script>
 <?php include "../footer.php";?>

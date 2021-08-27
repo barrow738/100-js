@@ -56,6 +56,15 @@
                                         </ul>
                                     }
                                 </li>
+                                <li>
+                                    permissions [
+                                        <ul>
+                                            <li>
+                                                tabs
+                                            </li>
+                                        </ul>
+                                        ]
+                                </li>
                             </u>
                         </li>
                         <li>icon.png</li>
