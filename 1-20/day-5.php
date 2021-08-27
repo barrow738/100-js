@@ -56,6 +56,7 @@
             </li>`
         }
         console.log(myInputs)
+        localStorage.clear()
 
     }
     
