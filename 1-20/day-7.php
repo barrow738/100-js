@@ -11,14 +11,27 @@
                 <h1>
                     <?php echo $page_title;?> ( <span class="date">August 31 <sup>th</sup>, 2021</span> )
                 </h1>
+                <div id="nullDiv">
+
+                </div>
+                <button class="btn btn-main" onClick="reset()">Reset</button>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <script>
-    let parg = document.createElement("p")
-    let textContent = document.createTextNode("You are an awesome person")
+    let d = new Date()
+    // let dob = parseInt(prompt('What is your birthday years'))
+    let dob = 1996
+    var age = d.getFullYear() - dob
+    let prg = document.createElement('p')
+    let txtCont = document.createTextNode('You are an awesome person. I am ' + age + ' years old. \nThis text has been created from javascript')
+    prg.setAttribute('id', 'pargText')
+    prg.appendChild(txtCont)
+    document.getElementById('nullDiv').appendChild(prg)
+    console.log(age)
+
     
 </script>
 <?php include "../footer.php";?>
