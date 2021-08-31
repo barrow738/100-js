@@ -32,6 +32,8 @@
     document.getElementById('nullDiv').appendChild(prg)
     console.log(age)
 
-    
+    function reset() {
+        document.getElementById('pargText').remove()
+    }
 </script>
 <?php include "../footer.php";?>
