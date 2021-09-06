@@ -1,5 +1,5 @@
 <?php 
-    $page_title = "Only watching video tutorial";
+    $page_title = "Watching tutorial";
     include "../header.php";
     include "../header-menu.php";
 ?>
@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12">
                 <h1>
-                    <?php echo $page_title;?> ( <span class="date">September 3 <sup>rd</sup>, 2021</span> )
+                    <?php echo $page_title;?> ( <span class="date">September 6 <sup>th</sup>, 2021</span> )
                 </h1>
                 </div>
             </div>
