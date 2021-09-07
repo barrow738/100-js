@@ -17,7 +17,6 @@
                 </form>
                 <div class="todo-container">
                     <ul class="todo-list">
-                        <li></li>
                     </ul>
                 </div>
                 </div>
@@ -34,7 +33,27 @@
 
     function addTodo(event) {
         event.preventDefault()
-        alert('I think it is working now')
+        
+        // create div
+        const todoDiv = document.createElement('div')
+        todoDiv.classList.add('todo')
+        // create li
+        const newTodo = document.createElement('li')
+        newTodo.innerText = 'Hello world'
+        newTodo.classList.add('todo-item')
+        todoDiv.appendChild(newTodo)
+
+        const completedBtn = document.createElement('button')
+        completedBtn.classList.add('completed-btn')
+        completedBtn.innerHTML = 'Task completed'
+        todoDiv.appendChild(completedBtn)
+
+        const deleteBtn = document.createElement('button')
+        deleteBtn.classList.add('delete-btn')
+        deleteBtn.innerHTML = 'Delete Task'
+        todoDiv.appendChild(deleteBtn)
+
+        todoList.appendChild(todoDiv)
     }
 </script>
 <?php include "../footer.php";?>

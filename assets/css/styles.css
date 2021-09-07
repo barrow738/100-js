@@ -239,3 +239,23 @@ input{
     border-radius: 0.5rem;
     border:1px solid #fff;
 }
+
+
+/* To do list style */
+.completed-btn{
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none !important;
+    color: var(--white);
+    margin-right: 0.5rem;
+}
+.delete-btn{
+    display: inline-block;
+    background-color: var(--btn-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none !important;
+    color: var(--main-color);
+}
