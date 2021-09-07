@@ -72,5 +72,6 @@
             todo.classList.toggle('completed')
         }
     }
+    // DOMContentLoaded and event of after the page has loaded
 </script>
 <?php include "../footer.php";?>
