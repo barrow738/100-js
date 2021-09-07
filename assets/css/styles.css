@@ -259,3 +259,25 @@ input{
     border: none !important;
     color: var(--main-color);
 }
+.todo-container{
+    margin-left: 0;
+    padding: 0;
+}
+.todo-list{
+    list-style: none;
+}
+.todo{
+    margin-left: -1.25rem;
+    display: flex;
+    background-color: #0001;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-top:1rem;
+}
+.todo li{
+    flex: 1;
+    margin-bottom: 0;
+}

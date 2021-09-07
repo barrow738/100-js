@@ -39,7 +39,7 @@
         todoDiv.classList.add('todo')
         // create li
         const newTodo = document.createElement('li')
-        newTodo.innerText = 'Hello world'
+        newTodo.innerText = todoInput.value
         newTodo.classList.add('todo-item')
         todoDiv.appendChild(newTodo)
 
@@ -54,6 +54,8 @@
         todoDiv.appendChild(deleteBtn)
 
         todoList.appendChild(todoDiv)
+
+        todoInput.value = ''
     }
 </script>
 <?php include "../footer.php";?>
