@@ -276,8 +276,19 @@ input{
     padding: 0.5rem;
     border-radius: 0.25rem;
     margin-top:1rem;
+    transition: 1s all ease
+}
+.todo.completed{
+    background: rgba(0, 128, 0, 0.2);
 }
 .todo li{
     flex: 1;
     margin-bottom: 0;
+}
+.todo.completed li{
+    text-decoration: line-through;
+}
+.fall{
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
 }

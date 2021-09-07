@@ -30,6 +30,7 @@
     const todoList = document.querySelector('.todo-list')
 
     todoBtn.addEventListener('click', addTodo)
+    todoList.addEventListener('click', deleteCheck)
 
     function addTodo(event) {
         event.preventDefault()
@@ -56,6 +57,20 @@
         todoList.appendChild(todoDiv)
 
         todoInput.value = ''
+    }
+    function deleteCheck(e) {
+        const item = e.target
+        if(item.classList[0] === 'delete-btn'){
+            const todo = item.parentElement
+            todo.classList.add('fall')
+            todo.addEventListener('transitionend', function() {
+                todo.remove()
+            })
+        }
+        if(item.classList[0] === 'completed-btn'){
+            const todo = item.parentElement
+            todo.classList.toggle('completed')
+        }
     }
 </script>
 <?php include "../footer.php";?>
